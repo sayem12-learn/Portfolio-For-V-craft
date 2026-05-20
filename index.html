@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Craft // Premium Futuristic Creative Agency</title>
+    <!-- Core Typographic Engines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Architectural Sheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Dynamic Loading Screen -->
+    <div id="loader-screen" class="loader-container">
+        <div class="loader-content">
+            <h2 class="loader-logo"><span><img src="vision craft.png" alt=""></span></h2>
+            <div class="loader-bar-wrapper">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Architecture -->
+    <header class="navbar-anchor">
+        <div class="site-container nav-flex-panel">
+            <a href="#" class="agency-logo-text" id="header-logo"><span><img class="img" src="vision craft.png" alt=""></span></a>
+            
+            <button class="mobile-hamburger-trigger" aria-label="Toggle Menu" id="menu-trigger">
+                <span class="bar-line"></span>
+                <span class="bar-line"></span>
+            </button>
+            
+            <nav class="navigation-overlay" id="nav-menu">
+                <div class="nav-links-wrapper">
+                    <a href="#hero" class="interactive-nav-link active">Home</a>
+                    <a href="#about" class="interactive-nav-link">About</a>
+                    <a href="#services" class="interactive-nav-link">Services</a>
+                    <a href="#portfolio" class="interactive-nav-link">Work</a>
+                    <a href="#team" class="interactive-nav-link">Team</a>
+                    <a href="#reviews" class="interactive-nav-link">Reviews</a>
+                    <a href="#contact" class="interactive-nav-link">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Hero Workspace -->
+    <section id="hero" class="hero-arena">
+        <div class="ambient-glow-orb target-orb-1"></div>
+        <div class="ambient-glow-orb target-orb-2"></div>
+        <div class="site-container hero-inner-grid">
+            <div class="hero-text-block scroll-reveal">
+                <h1 class="hero-main-title">We Forge <span class="text-gradient-sky">Futuristic</span> Brand Realities.</h1>
+                <p class="hero-description-paragraph">An elite digital collective designing ultra-premium experiences, iconic brand identities, and hyper-optimized engineering solutions for global innovators.</p>
+                <div class="hero-action-row">
+                    <a href="#portfolio" class="premium-action-btn solid-sky">View Creations</a>
+                    <a href="#contact" class="premium-action-btn outline-white">Initiate Project</a>
+                </div>
+            </div>
+            <div class="hero-display-block scroll-reveal">
+                <!-- Floating Preview Cards dynamically rendered by app.js -->
+                <div class="floating-cards-container" id="hero-cards-deck"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Workspace -->
+    <section id="about" class="about-arena">
+        <div class="site-container generic-split-grid">
+            <div class="split-left-panel scroll-reveal">
+                <span class="section-tag-tracker">WHO WE ARE</span>
+                <h2 class="section-core-title">Architecting the Next Digital Generation</h2>
+                <p class="neutral-body-text">At Vision Craft, we bypass conventional design guidelines. We build hyper-scalable ecosystems that combine glassmorphic interfaces, high-end content strategies, and clean code optimization.</p>
+                <div class="vision-mission-cards">
+                    <div class="mini-glass-badge">
+                        <h4>Our Mission</h4>
+                        <p>To transition modern corporate assets into highly interactive visual masterpieces.</p>
+                    </div>
+                    <div class="mini-glass-badge">
+                        <h4>Our Vision</h4>
+                        <p>Setting the international standard for aesthetic utility and computational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="split-right-panel scroll-reveal">
+                <div class="abstract-graphic-container glassmorphic-panel">
+                    <div class="internal-glow-line"></div>
+                    <h3>Why Choose Vision Craft?</h3>
+                    <ul class="premium-feature-list">
+                        <li>✦ Absolute Pixel-Perfect Precision</li>
+                        <li>✦ Awwwards-Level Spatial Typography</li>
+                        <li>✦ High-Velocity Project Iteration</li>
+                        <li>✦ Advanced Conversion Architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services Workspace -->
+    <section id="services" class="services-arena">
+        <div class="site-container">
+            <div class="center-section-header scroll-reveal">
+                <span class="section-tag-tracker">CAPABILITIES</span>
+                <h2 class="section-core-title">Elite Design & Tech Infrastructure</h2>
+            </div>
+            <div class="interactive-services-grid" id="services-injection-point">
+                <!-- Data injected from js/services.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Portfolio Workspace -->
+    <section id="portfolio" class="portfolio-arena">
+        <div class="site-container">
+            <div class="center-section-header scroll-reveal">
+                <span class="section-tag-tracker">CREATIVE CASE STUDIES</span>
+                <h2 class="section-core-title">Selected Masterpieces</h2>
+            </div>
+            
+            <!-- Category Filter Control Center -->
+            <div class="filter-navigation-bar scroll-reveal" id="portfolio-filter-hub">
+                <button class="filter-pill-btn active" data-target-category="all">All Ecosystems</button>
+                <button class="filter-pill-btn" data-target-category="Logo">Logo</button>
+                <button class="filter-pill-btn" data-target-category="Branding">Branding</button>
+                <button class="filter-pill-btn" data-target-category="Social Media">Social Media</button>
+                <button class="filter-pill-btn" data-target-category="UI Design">UI Design</button>
+                <button class="filter-pill-btn" data-target-category="Posters">Posters</button>
+                <button class="filter-pill-btn" data-target-category="Motion Graphics">Motion Graphics</button>
+            </div>
+
+            <div class="adaptive-portfolio-grid" id="portfolio-injection-point">
+                <!-- Data injected from js/portfolio.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Preview Lightbox Modal -->
+    <div class="lightbox-modal-overlay" id="global-lightbox">
+        <button class="lightbox-close-trigger" id="lightbox-close">×</button>
+        <div class="lightbox-content-box">
+            <img src="" alt="Enlarged View" id="lightbox-target-img">
+            <h3 id="lightbox-target-title"></h3>
+            <p id="lightbox-target-desc"></p>
+        </div>
+    </div>
+
+    <!-- 5. Stats Workspace -->
+    <section id="stats" class="stats-arena">
+        <div class="site-container numerical-counter-row" id="stats-injection-point">
+            <!-- Data injected from js/stats.js -->
+        </div>
+    </section>
+
+    <!-- 6. Process Workspace -->
+    <section id="process" class="process-arena">
+        <div class="site-container">
+            <div class="center-section-header scroll-reveal">
+                <span class="section-tag-tracker">WORKFLOW ENGINE</span>
+                <h2 class="section-core-title">Our Operational Roadmap</h2>
+            </div>
+            <div class="chronological-process-track" id="process-injection-point">
+                <!-- Data injected from js/process.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Team Workspace -->
+    <section id="team" class="team-arena">
+        <div class="site-container">
+            <div class="center-section-header scroll-reveal">
+                <span class="section-tag-tracker">VISIONARIES</span>
+                <h2 class="section-core-title">The Engineering & Creative Brains</h2>
+            </div>
+            <div class="executive-team-grid" id="team-injection-point">
+                <!-- Data injected from js/team.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Reviews Workspace -->
+    <section id="reviews" class="reviews-arena">
+        <div class="site-container">
+            <div class="center-section-header scroll-reveal">
+                <span class="section-tag-tracker">TESTIMONIALS</span>
+                <h2 class="section-core-title">Client Verdicts</h2>
+            </div>
+            <div class="slider-module-wrapper scroll-reveal">
+                <div class="slider-viewport-container" id="reviews-injection-point">
+                    <!-- Data injected from js/reviews.js -->
+                </div>
+                <div class="slider-navigation-arrows">
+                    <button class="arrow-navigation-btn" id="slider-left-arrow" aria-label="Previous Review">←</button>
+                    <button class="arrow-navigation-btn" id="slider-right-arrow" aria-label="Next Review">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ Workspace -->
+    <section id="faq" class="faq-arena">
+        <div class="site-container max-width-750">
+            <div class="center-section-header scroll-reveal">
+                <span class="section-tag-tracker">FAQ</span>
+                <h2 class="section-core-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion-component-container" id="faq-injection-point">
+                <!-- Data injected from js/faq.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Contact Workspace -->
+    <section id="contact" class="contact-arena">
+        <div class="site-container contact-split-architecture">
+            <div class="contact-informational-wing scroll-reveal">
+                <span class="section-tag-tracker">CONNECT</span>
+                <h2 class="section-core-title">Let’s Launch Your Brand Into Tomorrow</h2>
+                <p class="neutral-body-text">Ready to experience deep strategic design transformation? Use our encrypted communications channels or drop your data directly into the central terminal wrapper.</p>
+                
+                <div class="fast-action-communication-hub" id="contact-meta-injection">
+                    <!-- Configured via contact info in app.js / dynamic properties -->
+                </div>
+            </div>
+            <div class="contact-form-wing glassmorphic-panel scroll-reveal">
+                <form id="vision-craft-terminal-form">
+                    <div class="input-field-wrapper">
+                        <label for="form-user-name">Your Structural Name</label>
+                        <input type="text" id="form-user-name" required placeholder="e.g. Alexander Mercer">
+                    </div>
+                    <div class="input-field-wrapper">
+                        <label for="form-user-email">Secure Communication Email</label>
+                        <input type="email" id="form-user-email" required placeholder="e.g. alex@enterprise.com">
+                    </div>
+                    <div class="input-field-wrapper">
+                        <label for="form-user-msg">Project Ecosystem Framework</label>
+                        <textarea id="form-user-msg" rows="5" required placeholder="Describe parameters, target schedules, scope metrics..."></textarea>
+                    </div>
+                    <button type="submit" class="premium-action-btn solid-sky full-width-btn">Transmit Core Signal</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Live Map Interface Panel Wrap -->
+        <div class="site-container map-module-wrapper scroll-reveal" id="map-frame-anchor">
+            <!-- Rendered smoothly via initialization parameters -->
+        </div>
+    </section>
+
+    <!-- 11. Large Scale CTA Banner -->
+    <section class="mega-cta-arena">
+        <div class="site-container center-alignment scroll-reveal">
+            <h2 class="mega-cta-heading">LET'S BUILD YOUR BRAND</h2>
+            <p class="mega-cta-subheading">Step into high-fidelity visibility metrics. Secure your creative asset assignment array today.</p>
+            <a href="#contact" class="premium-action-btn solid-white-glow">Initialize Onboarding Protocol</a>
+        </div>
+    </section>
+
+    <!-- 12. Complete Footer Architecture -->
+    <footer class="footer-terminal-panel">
+        <div class="site-container footer-top-grid">
+            <div class="footer-brand-column">
+                <a href="#" class="agency-logo-text">VISION<span>CRAFT</span></a>
+                <p class="footer-meta-summary">Engineering aesthetic dominance across digital terrain layouts since 2026.</p>
+            </div>
+            <div class="footer-links-column">
+                <h4>System Tree</h4>
+                <a href="#hero">Home Workspace</a>
+                <a href="#about">About Architecture</a>
+                <a href="#services">Capabilities</a>
+                <a href="#portfolio">Selected Works</a>
+            </div>
+            <div class="footer-links-column">
+                <h4>Ecosystem Branches</h4>
+                <a href="#team">Visionary Personnel</a>
+                <a href="#reviews">Client Verdicts</a>
+                <a href="#faq">System Queries</a>
+                <a href="#contact">Terminal Request</a>
+            </div>
+            <div class="footer-links-column">
+                <h4>Social Arrays</h4>
+                <div class="footer-social-stack" id="footer-socials-injection">
+                    <!-- Loaded dynamically via global data objects -->
+                </div>
+            </div>
+        </div>
+        <div class="site-container footer-base-row">
+            <p class="copyright-disclaimer">&copy; 2026 Vision Craft Design Studio. Crafted for Next-Gen Scale.</p>
+            <button id="back-to-top-trigger" class="back-to-top-btn" aria-label="Scroll to top of terminal">▲ Top</button>
+        </div>
+    </footer>
+
+    <!-- CONTENT DATA MANAGEMENT SCRIPTS (EASIEST PLACE FOR BEGINNERS TO EDIT CONTENT) -->
+    <script src="js/services.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/process.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/faq.js"></script>
+    
+    <!-- CORE SYSTEM INTERACTION CONTROLLER -->
+    <script src="script.js"></script>
+</body>
+</html>
