@@ -44,9 +44,33 @@ const portfolioData = [
         
     },
     {
-        title: "Cyberpunk Cinematic Poster",
+        title: "Poster For Client",
         category: "Posters",
-        image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=800&auto=format&fit=crop",
+        image: "./preview/divorica  project 1 copy.jpg",
+        desc: "High-contrast geometric asset print deployed for international tech event displays."
+    },
+    {
+        title: "Poster For Client",
+        category: "Posters",
+        image: "./preview/offer bassed poster 2.jpg",
+        desc: "High-contrast geometric asset print deployed for international tech event displays."
+    },
+    {
+        title: "Poster For Client",
+        category: "Posters",
+        image: "./preview/design1.jpg",
+        desc: "High-contrast geometric asset print deployed for international tech event displays."
+    },
+    {
+        title: "Poster For Client",
+        category: "Posters",
+        image: "./preview/foysal.jpeg",
+        desc: "High-contrast geometric asset print deployed for international tech event displays."
+    },
+    {
+        title: "Poster For Client",
+        category: "Posters",
+        image: "./preview/meem.jpeg",
         desc: "High-contrast geometric asset print deployed for international tech event displays."
     },
     {
