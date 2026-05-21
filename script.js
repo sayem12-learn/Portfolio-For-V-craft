@@ -254,18 +254,24 @@ function executeInterfaceRendering() {
     // C. Render Portfolio Grid
     const portfolioGrid = document.getElementById("portfolio-injection-point");
     if(portfolioGrid && typeof portfolioData !== 'undefined') {
-        portfolioGrid.innerHTML = portfolioData.map(project => `
-            <div class="portfolio-wrapper-node glassmorphic-panel scroll-reveal" data-item-category="${project.category}">
-                <div class="img-frame-box">
-                    <img src="${project.image}" alt="${project.title}">
-                </div>
-                <div class="portfolio-meta-desk">
-                    <span>${project.category}</span>
-                    <h3>${project.title}</h3>
-                    <a href="#" class="lightbox-trigger-anchor" data-img-src="${project.image}" data-title="${project.title}" data-desc="${project.desc}">Analyze Spec Matrix ↗</a>
-                </div>
-            </div>
-        `).join('');
+       portfolioGrid.innerHTML = portfolioData.map(project => `
+    <div class="portfolio-wrapper-node glassmorphic-panel scroll-reveal lightbox-trigger-anchor"
+        data-item-category="${project.category}"
+        data-img-src="${project.image}"
+        data-title="${project.title}"
+        data-desc="${project.desc}">
+
+        <div class="img-frame-box">
+            <img src="${project.image}" alt="${project.title}">
+        </div>
+
+        <div class="portfolio-meta-desk">
+            <span>${project.category}</span>
+            <h3>${project.title}</h3>
+        </div>
+
+    </div>
+`).join('');
     }
 
     // D. Render Stats Bar
@@ -459,20 +465,31 @@ function initializeLightboxModal() {
     if(!lightbox) return;
 
     document.addEventListener("click", (e) => {
-        if(e.target.classList.contains("lightbox-trigger-anchor")) {
-            e.preventDefault();
-            const src = e.target.getAttribute("data-img-src");
-            const heading = e.target.getAttribute("data-title");
-            const summary = e.target.getAttribute("data-desc");
 
-            if(targetImg && src) {
-                targetImg.src = src;
-                if(targetTitle) targetTitle.textContent = heading;
-                if(targetDesc) targetDesc.textContent = summary;
-                lightbox.classList.add("open");
-            }
+    const trigger = e.target.closest(".lightbox-trigger-anchor");
+
+    if(trigger) {
+
+        e.preventDefault();
+
+        const src = trigger.getAttribute("data-img-src");
+        const heading = trigger.getAttribute("data-title");
+        const summary = trigger.getAttribute("data-desc");
+
+        if(targetImg && src) {
+
+            targetImg.src = src;
+
+            if(targetTitle)
+                targetTitle.textContent = heading;
+
+            if(targetDesc)
+                targetDesc.textContent = summary;
+
+            lightbox.classList.add("open");
         }
-    });
+    }
+});
 
     if(closeBtn) {
         closeBtn.addEventListener("click", () => lightbox.classList.remove("open"));
